@@ -80,3 +80,48 @@ test('localizeData translates whitelisted prose, sets lang, and never touches re
   const en = localizeData(data, {}, 'en');
   assert.equal(JSON.stringify(en.events), JSON.stringify(data.events));
 });
+
+/* Out-of-vocabulary reference types (core#74). The closed vocabulary falls back
+ * to the raw value, which puts an English word on a localized page — the exact
+ * thing the fallback line's own comment forbids. This repo's data is clean, but
+ * it had no reporter at all, so "no warning" here meant nothing was looking;
+ * the test pins that the report actually happens, because a warning nobody
+ * emits is the same as no warning. */
+const { renderReference, UNKNOWN_REF_TYPES, UI } = require('../build.js');
+
+test('an unknown reference type is collected for reporting, not swallowed', () => {
+  UNKNOWN_REF_TYPES.clear();
+  const ref = (type) => ({ id: 'x', title: 'T', url: 'https://e.org', publisher: 'P', type });
+  renderReference(ref('official'), 1, {}, UI.es);
+  assert.equal(UNKNOWN_REF_TYPES.size, 0, 'a known type must not be reported');
+
+  renderReference(ref('primary'), 2, {}, UI.es);
+  renderReference(ref('devotional'), 3, {}, UI.es);
+  renderReference(ref('primary'), 4, {}, UI.es);
+  assert.deepEqual([...UNKNOWN_REF_TYPES].sort(), ['devotional', 'primary'],
+    'every distinct offender is named, and named once');
+
+  // And the defect itself: the raw English word does reach the Spanish page.
+  assert.match(renderReference(ref('devotional'), 5, {}, UI.es), /devotional/);
+  UNKNOWN_REF_TYPES.clear();
+});
+
+test('refTypes: every declared type has a label in all three locales', () => {
+  // The vocabulary and its translations drift apart silently — a type added to
+  // en and forgotten in pt renders the English word on the Portuguese page,
+  // which is the very defect core#74 is about.
+  const en = Object.keys(UI.en.refTypes);
+  for (const lang of ['es', 'pt']) {
+    assert.deepEqual(Object.keys(UI[lang].refTypes).sort(), en.slice().sort(),
+      `${lang} refTypes must cover exactly the same set as en`);
+    for (const k of en) assert.ok(UI[lang].refTypes[k], `${lang} has no label for "${k}"`);
+  }
+  // The two added in core#74 are kinds of document, and must be present.
+  for (const k of ['testimony', 'analysis']) assert.ok(UI.en.refTypes[k], `${k} missing`);
+  // These are axes, not kinds, and must NOT be in the vocabulary — they belong
+  // in publisherNote. Adding them would re-open the bug.
+  for (const k of ['primary', 'devotional', 'institutional']) {
+    assert.equal(UI.en.refTypes[k], undefined,
+      `"${k}" is a perspective or a primacy claim, not a kind of document (core#74)`);
+  }
+});
