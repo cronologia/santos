@@ -1,0 +1,430 @@
+{
+  "meta": {
+    "title": "Santos — Cronologia",
+    "subtitle": "Canonization paths of Marian-apparition seer saints (1531–2017)",
+    "description": "An open, source-referenced chronology of the beatifications and canonizations of Catholic saints tied to the major Marian apparitions of Guadalupe, the Rue du Bac, Lourdes and Fátima.",
+    "language": "en",
+    "siteUrl": "https://cronologia.github.io/santos/",
+    "lastUpdated": "2026-08-05",
+    "dataQualityNote": "Work-in-progress dataset compiled from public sources (see references). Sanctity and miracles are recorded here as Church judgments: the dataset records who declared what and when, citing the declaring document, and does not assert supernatural claims as fact. Contested claims are attributed to their authors; dates not yet verified against a primary source are flagged with a ? mark. Corrections against primary sources are welcome."
+  },
+  "facts": [
+    {
+      "label": "What it is",
+      "value": "A chronology of how five seers of major Marian apparitions were declared blessed and saint — who declared what, when, and on the strength of which document.",
+      "sources": ["vat-jd-canonization-2002", "vat-marto-canonization-2017"]
+    },
+    {
+      "label": "Initial scope",
+      "value": "Five saints: Juan Diego Cuauhtlatoatzin (Guadalupe, 1531), Catherine Labouré (Rue du Bac, 1830), Bernadette Soubirous (Lourdes, 1858), and Francisco and Jacinta Marto (Fátima, 1917).",
+      "sources": ["vat-jd-bio", "medaille-chapelle", "lourdes-apparitions", "fatima-apparitions"]
+    },
+    {
+      "label": "Youngest non-martyr saints",
+      "value": "Francisco Marto (1908–1919) and Jacinta Marto (1910–1920), canonized by Pope Francis on 13 May 2017, are the youngest persons canonized by the Catholic Church who were not martyrs.",
+      "sources": ["vat-marto-canonization-2017", "wp-marto"]
+    },
+    {
+      "label": "Presiding popes",
+      "value": "Pius XI (Bernadette's beatification 1925 and canonization 1933; Catherine Labouré's beatification 1933), Pius XII (Labouré's canonization 1947), John Paul II (Juan Diego 1990 and 2002; the Martos' beatification 2000), Francis (the Martos' canonization 2017).",
+      "sources": ["lourdes-beatification-centenary", "vat-laboure-1947", "vat-jd-canonization-2002", "vat-marto-canonization-2017"]
+    }
+  ],
+  "events": [
+    {
+      "year": 1531,
+      "date": "1531-12-09",
+      "dateVerified": false,
+      "dateNote": "Traditional dates as given in the Vatican canonization biography; contemporary sixteenth-century documentation of the account is debated among historians.",
+      "place": "Tepeyac Hill, Mexico City (New Spain)",
+      "title": "Guadalupe apparitions reported by Juan Diego",
+      "text": "According to the Guadalupan account received by the Church, the Virgin Mary appeared to the indigenous layman Juan Diego Cuauhtlatoatzin between 9 and 12 December 1531, and the image of Our Lady of Guadalupe was left on his tilma. The Vatican's canonization biography relates this account; its sixteenth-century documentation is debated among historians.",
+      "sources": ["vat-jd-bio", "wp-juan-diego"]
+    },
+    {
+      "year": 1830,
+      "date": "1830-07-18",
+      "dateVerified": true,
+      "place": "Chapel of the Daughters of Charity, rue du Bac, Paris, France",
+      "title": "Rue du Bac apparitions reported by Catherine Labouré",
+      "text": "Catherine Labouré, a novice of the Daughters of Charity, reported apparitions of the Virgin Mary in the mother-house chapel: on the night of 18–19 July 1830 and again on 27 November 1830, when she reported the vision from which the Miraculous Medal was struck in 1832.",
+      "sources": ["medaille-chapelle", "wp-laboure"]
+    },
+    {
+      "year": 1858,
+      "date": "1858-02-11",
+      "dateVerified": true,
+      "place": "Grotto of Massabielle, Lourdes, France",
+      "title": "Lourdes apparitions reported by Bernadette Soubirous",
+      "text": "Bernadette Soubirous, aged fourteen, reported the first of eighteen apparitions of the Virgin Mary at the grotto of Massabielle; the series ran from 11 February to 16 July 1858. Bishop Laurence of Tarbes declared the apparitions worthy of belief in 1862.",
+      "sources": ["lourdes-apparitions", "wp-bernadette"]
+    },
+    {
+      "year": 1876,
+      "date": "1876-12-31",
+      "dateVerified": false,
+      "dateNote": "Date from secondary accounts (encyclopedic and Vincentian sources); not yet checked against a primary document.",
+      "place": "Hospice of Enghien, Paris, France",
+      "title": "Death of Catherine Labouré",
+      "text": "Catherine Labouré died at the hospice of Enghien in Paris, where she had served the elderly for over forty years. Her identity as the rue du Bac seer, kept quiet during her life, became generally known only around her death.",
+      "sources": ["wp-laboure", "medaille-chapelle"]
+    },
+    {
+      "year": 1879,
+      "date": "1879-04-16",
+      "dateVerified": false,
+      "dateNote": "Date from secondary accounts; not yet checked against a primary document.",
+      "place": "Convent of Saint-Gildard, Nevers, France",
+      "title": "Death of Bernadette Soubirous",
+      "text": "Bernadette died aged thirty-five at the convent of Saint-Gildard, mother house of the Sisters of Charity of Nevers, which she had entered in 1866.",
+      "sources": ["wp-bernadette", "lourdes-apparitions"]
+    },
+    {
+      "year": 1917,
+      "date": "1917-05-13",
+      "dateVerified": true,
+      "place": "Cova da Iria, Fátima, Portugal",
+      "title": "Fátima apparitions reported by the three shepherd children",
+      "text": "Lúcia dos Santos and her cousins Francisco and Jacinta Marto reported six monthly apparitions of the Virgin Mary between 13 May and 13 October 1917. The bishop of Leiria declared the apparitions worthy of belief on 13 October 1930.",
+      "sources": ["fatima-apparitions", "vat-marto-beatification-2000"]
+    },
+    {
+      "year": 1919,
+      "date": "1919-04-04",
+      "dateVerified": true,
+      "place": "Aljustrel, Fátima, Portugal",
+      "title": "Death of Francisco Marto",
+      "text": "Francisco Marto died at home in Aljustrel, aged ten, a victim of the influenza pandemic; the Shrine of Fátima records his death under 4 April 1919.",
+      "sources": ["fatima-francisco-birth", "wp-marto"]
+    },
+    {
+      "year": 1920,
+      "date": "1920-02-20",
+      "dateVerified": true,
+      "place": "Dona Estefânia hospital, Lisbon, Portugal",
+      "title": "Death of Jacinta Marto",
+      "text": "Jacinta Marto died in a Lisbon hospital, aged nine, after surgery for purulent pleurisy following influenza. Her liturgical memorial is kept on 20 February.",
+      "sources": ["vaticanstate-jacinta", "wp-marto"]
+    },
+    {
+      "year": 1925,
+      "date": "1925-06-14",
+      "dateVerified": true,
+      "place": "Rome, Italy",
+      "title": "Bernadette Soubirous beatified by Pius XI",
+      "text": "Pius XI beatified Bernadette Soubirous. The Sanctuary of Lourdes' centenary notice reproduces the beatification declaration, issued in Rome at Saint Peter's and dated 14 June 1925.",
+      "sources": ["lourdes-beatification-centenary", "wp-bernadette"]
+    },
+    {
+      "year": 1933,
+      "date": "1933-05-28",
+      "dateVerified": false,
+      "dateNote": "28 May 1933 per secondary sources. Pius XI's acts are not published on vatican.va; the corresponding entry in Acta Apostolicae Sedis has not yet been located in the 1933 volume (volume-level pointer cited).",
+      "place": "Rome, Italy",
+      "title": "Catherine Labouré beatified by Pius XI",
+      "text": "Pius XI beatified Catherine Labouré. The date of 28 May 1933 rests here on secondary sources; the official record belongs to the Acta Apostolicae Sedis of 1933, cited at volume level pending page-level verification.",
+      "sources": ["wp-laboure", "aas-25-1933"]
+    },
+    {
+      "year": 1933,
+      "date": "1933-12-08",
+      "dateVerified": true,
+      "place": "Saint Peter's Basilica, Rome, Italy",
+      "title": "Bernadette Soubirous canonized by Pius XI",
+      "text": "Pius XI canonized Bernadette Soubirous on the feast of the Immaculate Conception, 8 December 1933 — a date the Sanctuary of Lourdes' centenary notice confirms.",
+      "sources": ["lourdes-beatification-centenary", "wp-bernadette", "aas-25-1933"]
+    },
+    {
+      "year": 1947,
+      "date": "1947-07-27",
+      "dateVerified": false,
+      "dateNote": "Pius XII's vatican.va address of 28 July 1947 to the canonization pilgrims confirms the canonization had just taken place but does not itself date the rite; 27 July 1947 is the date given by secondary sources.",
+      "place": "Saint Peter's Basilica, Rome, Italy",
+      "title": "Catherine Labouré canonized by Pius XII",
+      "text": "Pius XII canonized Catherine Labouré. The next day he received the canonization pilgrims in the Court of Saint Damasus and praised the newly canonized 'saint of silence' (address of 28 July 1947, vatican.va); the 27 July date of the rite itself rests on secondary sources.",
+      "sources": ["vat-laboure-1947", "wp-laboure"]
+    },
+    {
+      "year": 1990,
+      "date": "1990-05-06",
+      "dateVerified": true,
+      "place": "Basilica of Our Lady of Guadalupe, Mexico City, Mexico",
+      "title": "Juan Diego beatified by John Paul II",
+      "text": "During his visit to Mexico, John Paul II beatified Juan Diego Cuauhtlatoatzin together with the child martyrs of Tlaxcala and José María de Yermo y Parres (homily of 6 May 1990, vatican.va).",
+      "sources": ["vat-jd-beatification-1990"]
+    },
+    {
+      "year": 2000,
+      "date": "2000-05-13",
+      "dateVerified": true,
+      "place": "Shrine of Fátima, Portugal",
+      "title": "Francisco and Jacinta Marto beatified by John Paul II",
+      "text": "John Paul II beatified the two shepherd children at the Shrine of Fátima on the anniversary of the first apparition, calling them 'two candles which God lit' (homily of 13 May 2000, vatican.va).",
+      "sources": ["vat-marto-beatification-2000"]
+    },
+    {
+      "year": 2002,
+      "date": "2002-07-31",
+      "dateVerified": true,
+      "place": "Basilica of Our Lady of Guadalupe, Mexico City, Mexico",
+      "title": "Juan Diego canonized by John Paul II",
+      "text": "John Paul II canonized Juan Diego Cuauhtlatoatzin, calling him in the canonization homily the first indigenous saint of the American continent (31 July 2002, vatican.va).",
+      "sources": ["vat-jd-canonization-2002", "vat-jd-bio"]
+    },
+    {
+      "year": 2017,
+      "date": "2017-05-13",
+      "dateVerified": true,
+      "place": "Shrine of Fátima, Portugal",
+      "title": "Francisco and Jacinta Marto canonized by Pope Francis",
+      "text": "Pope Francis canonized Francisco and Jacinta Marto at Fátima on the centenary of the first apparition (homily of 13 May 2017, vatican.va). They are the youngest non-martyr saints in the Church's history.",
+      "sources": ["vat-marto-canonization-2017", "wp-marto"]
+    }
+  ],
+  "figures": [
+    {
+      "name": "Juan Diego Cuauhtlatoatzin",
+      "role": "Indigenous Mexican layman; seer of the 1531 Tepeyac apparitions according to the Guadalupan account received by the Church. Beatified 1990 and canonized 2002 by John Paul II. His historicity is debated by some historians — a debate recorded here, not resolved. The life dates given are the traditional ones carried by the Vatican's own canonization biography.",
+      "dates": "c. 1474 – 1548",
+      "country": "Mexico (New Spain)",
+      "sources": ["vat-jd-bio", "wp-juan-diego"]
+    },
+    {
+      "name": "Catherine Labouré",
+      "role": "Daughter of Charity of Saint Vincent de Paul; seer of the 1830 rue du Bac apparitions from which the Miraculous Medal derives. Beatified 1933 by Pius XI, canonized 1947 by Pius XII.",
+      "dates": "1806-05-02 – 1876-12-31",
+      "country": "France",
+      "sources": ["wp-laboure", "medaille-chapelle", "vat-laboure-1947"]
+    },
+    {
+      "name": "Bernadette Soubirous",
+      "role": "Seer of the 1858 Lourdes apparitions; Sister of Charity of Nevers (as Sister Marie-Bernard). Beatified 1925 and canonized 1933, both by Pius XI.",
+      "dates": "1844-01-07 – 1879-04-16",
+      "country": "France",
+      "sources": ["wp-bernadette", "lourdes-beatification-centenary"]
+    },
+    {
+      "name": "Francisco Marto",
+      "role": "The eldest of the two Marto seers of Fátima; died at ten in the influenza pandemic. Beatified 2000 by John Paul II, canonized 2017 by Pope Francis.",
+      "dates": "1908-06-11 – 1919-04-04",
+      "country": "Portugal",
+      "sources": ["fatima-francisco-birth", "wp-marto"]
+    },
+    {
+      "name": "Jacinta Marto",
+      "role": "The youngest Fátima seer; died at nine in Lisbon. Beatified 2000 by John Paul II, canonized 2017 by Pope Francis — the youngest non-martyr saint. The birth date given is the Shrine of Fátima's; older devotional literature gives 11 March 1910 instead.",
+      "dates": "1910-03-05 – 1920-02-20",
+      "country": "Portugal",
+      "sources": ["fatima-jacinta-birth", "vaticanstate-jacinta", "wp-marto"]
+    },
+    {
+      "name": "Lúcia dos Santos",
+      "role": "The third and eldest Fátima seer; Carmelite nun (Sister Lúcia of Jesus and of the Immaculate Heart). NOT canonized: Pope Francis authorized the decree on her heroic virtues on 22 June 2023, making her Venerable; her cause continues.",
+      "dates": "1907-03-28 – 2005-02-13",
+      "country": "Portugal",
+      "sources": ["vaticannews-lucia-venerable", "wp-marto"]
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Shrine of Fátima (Sanctuary of Our Lady of the Rosary of Fátima)",
+      "founded": "1919",
+      "place": "Cova da Iria, Fátima, Portugal",
+      "relation": "The founding year given is that of the Chapel of the Apparitions. Custodian of the memory of the 1917 apparitions and of the tombs of Francisco and Jacinta Marto; its published biographies and anniversaries are used here as the shrine's own record — an official but devotional perspective.",
+      "sources": ["fatima-apparitions", "fatima-francisco-birth"]
+    },
+    {
+      "name": "Sanctuary of Our Lady of Lourdes",
+      "founded": "1858",
+      "place": "Lourdes, France",
+      "relation": "Shrine at the site of the 1858 apparitions at the grotto of Massabielle; the first chapel there was begun in 1862. Note a common confusion: Bernadette is not buried at Lourdes — she died and lies at the convent of Saint-Gildard in Nevers.",
+      "sources": ["lourdes-apparitions", "wp-bernadette"]
+    },
+    {
+      "name": "Chapel of Our Lady of the Miraculous Medal (rue du Bac)",
+      "founded": "1815",
+      "place": "140 rue du Bac, Paris, France",
+      "relation": "The chapel of the Daughters of Charity mother house, opened in 1815. Site of the 1830 apparitions reported by Catherine Labouré and resting place of her remains; the association's site is used here as the custodian's own record — an official but devotional perspective.",
+      "sources": ["medaille-chapelle"]
+    }
+  ],
+  "disambiguation": {
+    "note": "Canonizations of apparition seers invite two flattenings: treating the canonization as proof that the apparition happened, and treating everyone connected with an apparition as a canonized saint. This dataset records Church declarations — who declared what, and when — and leaves the supernatural claims themselves unasserted.",
+    "items": [
+      {
+        "title": "Canonizing the seer ≠ authenticating the apparition as fact",
+        "text": "A canonization is the Church's judgment on a person's holiness; approval of an apparition ('worthy of belief', declared by the local bishop) is a separate ecclesiastical judgment. Neither is recorded here as a statement that the reported events occurred; both are recorded as dated declarations by named authorities.",
+        "sources": ["vat-marto-canonization-2017", "lourdes-apparitions"]
+      },
+      {
+        "title": "Lúcia dos Santos is not a canonized saint",
+        "text": "The third Fátima seer, who died in 2005, is Venerable — Pope Francis authorized the decree on her heroic virtues on 22 June 2023 — but she has been neither beatified nor canonized. Her cause continues.",
+        "sources": ["vaticannews-lucia-venerable"]
+      },
+      {
+        "title": "Juan Diego: canonized, and debated",
+        "text": "Some historians, notably the Vincentian scholar Stafford Poole, argue the documentary record for Juan Diego's existence is weak; the Holy See examined and rejected these objections before the 2002 canonization. Both the debate and the canonization are matters of record; this dataset asserts neither side of the historical question.",
+        "sources": ["wp-juan-diego", "vat-jd-canonization-2002"]
+      },
+      {
+        "title": "Jacinta Marto's birth date: 5 or 11 March 1910",
+        "text": "The Shrine of Fátima gives 5 March 1910 (with baptism on 19 March); older devotional literature often gives 11 March. The dataset records the shrine's date and notes the disagreement rather than resolving it.",
+        "sources": ["fatima-jacinta-birth", "wp-marto"]
+      }
+    ]
+  },
+  "references": [
+    {
+      "id": "vat-jd-canonization-2002",
+      "title": "Homily of John Paul II, Canonization of Juan Diego Cuauhtlatoatzin, Mexico City, 31 July 2002",
+      "url": "https://www.vatican.va/content/john-paul-ii/en/homilies/2002/documents/hf_jp-ii_hom_20020731_canonization-mexico.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Primary document — the canonizing pope's homily at the rite, published by the Holy See.",
+      "type": "official"
+    },
+    {
+      "id": "vat-jd-beatification-1990",
+      "title": "Homilía de Juan Pablo II, Beatificación de Juan Diego y de otros siervos de Dios, Ciudad de México, 6 de mayo de 1990",
+      "url": "https://www.vatican.va/content/john-paul-ii/es/homilies/1990/documents/hf_jp-ii_hom_19900506_citta-del-messico.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Primary document — the beatification homily, published by the Holy See (Spanish only).",
+      "type": "official"
+    },
+    {
+      "id": "vat-jd-bio",
+      "title": "Juan Diego Cuauhtlatoatzin — biography for the canonization",
+      "url": "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_en.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Official biography prepared for the canonization — the Church's own account, including the traditional 1474 and 1548 dates.",
+      "type": "official"
+    },
+    {
+      "id": "vat-marto-beatification-2000",
+      "title": "Homily of John Paul II, Beatification of Francisco and Jacinta Marto, Fátima, 13 May 2000",
+      "url": "https://www.vatican.va/content/john-paul-ii/en/homilies/2000/documents/hf_jp-ii_hom_20000513_beatification-fatima.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Primary document — the beatification homily, published by the Holy See.",
+      "type": "official"
+    },
+    {
+      "id": "vat-marto-canonization-2017",
+      "title": "Homily of Pope Francis, Holy Mass with the Rite of Canonization of Francisco and Jacinta Marto, Fátima, 13 May 2017",
+      "url": "https://www.vatican.va/content/francesco/en/homilies/2017/documents/papa-francesco_20170513_omelia-pellegrinaggio-fatima.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Primary document — the canonization homily, published by the Holy See.",
+      "type": "official"
+    },
+    {
+      "id": "vat-laboure-1947",
+      "title": "Pie XII, Aux pèlerins réunis à Rome pour la canonisation de sainte Catherine Labouré, 28 juillet 1947",
+      "url": "https://www.vatican.va/content/pius-xii/fr/speeches/1947/documents/hf_p-xii_spe_19470728_beata-caterina-laboure.html",
+      "publisher": "vatican.va",
+      "publisherNote": "Primary document — Pius XII's address the day after the canonization (French only). It confirms the canonization but does not date the rite itself.",
+      "type": "official"
+    },
+    {
+      "id": "aas-25-1933",
+      "title": "Acta Apostolicae Sedis, vol. 25 (1933)",
+      "url": "https://www.vatican.va/archive/aas/documents/AAS-25-1933-ocr.pdf",
+      "publisher": "vatican.va (Acta Apostolicae Sedis)",
+      "publisherNote": "Official gazette of the Holy See for 1933 — a volume-level pointer for Pius XI's 1933 acts concerning Labouré and Soubirous; the specific acta have not yet been located within the scanned PDF.",
+      "type": "official"
+    },
+    {
+      "id": "fatima-francisco-birth",
+      "title": "Saint Francisco Marto was born 110 years ago",
+      "url": "https://www.fatima.pt/en/news/saint-francisco-marto-was-born-110-years-ago",
+      "publisher": "Shrine of Fátima",
+      "publisherNote": "The shrine's own biographical notice — official custodian record, devotional perspective. Gives Francisco's birth (11 June 1908) and death (4 April 1919).",
+      "type": "official"
+    },
+    {
+      "id": "fatima-jacinta-birth",
+      "title": "Today marks the anniversary of Saint Jacinta Marto's birth",
+      "url": "https://www.fatima.pt/en/news/today-marks-the-anniversary-of-saint-jacinta-martos-birth",
+      "publisher": "Shrine of Fátima",
+      "publisherNote": "The shrine's own notice giving Jacinta's birth as 5 March 1910 — official custodian record, devotional perspective.",
+      "type": "official"
+    },
+    {
+      "id": "fatima-apparitions",
+      "title": "Narrative of the Apparitions",
+      "url": "https://www.fatima.pt/en/pages/narrative-of-the-apparitions-",
+      "publisher": "Shrine of Fátima",
+      "publisherNote": "The shrine's narrative of the 1917 apparitions — official custodian record, devotional perspective.",
+      "type": "official"
+    },
+    {
+      "id": "lourdes-beatification-centenary",
+      "title": "14th June 1925 – 14th June 2025: Centenary of the beatification of Bernadette Soubirous",
+      "url": "https://www.lourdes-france.com/en/centenary-of-the-beatification-of-bernadette-soubirous/",
+      "publisher": "Sanctuary of Our Lady of Lourdes",
+      "publisherNote": "The sanctuary's centenary notice, reproducing the 1925 beatification declaration and confirming the 8 December 1933 canonization — official custodian record.",
+      "type": "official"
+    },
+    {
+      "id": "lourdes-apparitions",
+      "title": "The Apparitions",
+      "url": "https://www.lourdes-france.com/en/the-apparitions/",
+      "publisher": "Sanctuary of Our Lady of Lourdes",
+      "publisherNote": "The sanctuary's account of the eighteen 1858 apparitions — official custodian record, devotional perspective.",
+      "type": "official"
+    },
+    {
+      "id": "medaille-chapelle",
+      "title": "La Chapelle de la Médaille Miraculeuse, 140 rue du Bac",
+      "url": "https://www.medaille-miraculeuse.fr/chapelle-medaille-miraculeuse",
+      "publisher": "Association de la Médaille Miraculeuse",
+      "publisherNote": "The Vincentian association's presentation of the chapel, dating the two 1830 apparitions — official custodian record, devotional perspective (French).",
+      "type": "official"
+    },
+    {
+      "id": "vaticanstate-jacinta",
+      "title": "20 February: Saint Jacinta Marto — Saint of the day",
+      "url": "https://www.vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/3675-20-february-saint-jacinta-marto.html",
+      "publisher": "vaticanstate.va",
+      "publisherNote": "Vatican City State's saint-of-the-day notice for Jacinta's 20 February memorial — official, summary-level.",
+      "type": "official"
+    },
+    {
+      "id": "vaticannews-lucia-venerable",
+      "title": "Fatima visionary Sr Lucia declared Venerable",
+      "url": "https://www.vaticannews.va/en/vatican-city/news/2023-06/fatima-visionary-sr-lucia-declared-venerable.html",
+      "publisher": "Vatican News",
+      "publisherNote": "The Holy See's news portal on the 22 June 2023 decree recognizing Lúcia dos Santos' heroic virtues — official media, not the decree text itself.",
+      "type": "news"
+    },
+    {
+      "id": "wp-juan-diego",
+      "title": "Juan Diego — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Juan_Diego",
+      "publisher": "Wikipedia",
+      "publisherNote": "Tertiary reference used for the historiographical debate and for cross-checking dates; not a primary source.",
+      "type": "encyclopedia"
+    },
+    {
+      "id": "wp-laboure",
+      "title": "Catherine Labouré — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Catherine_Labour%C3%A9",
+      "publisher": "Wikipedia",
+      "publisherNote": "Tertiary reference used for biographical dates (birth, death, beatification) pending primary verification.",
+      "type": "encyclopedia"
+    },
+    {
+      "id": "wp-bernadette",
+      "title": "Bernadette Soubirous — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bernadette_Soubirous",
+      "publisher": "Wikipedia",
+      "publisherNote": "Tertiary reference used for biographical dates pending primary verification.",
+      "type": "encyclopedia"
+    },
+    {
+      "id": "wp-marto",
+      "title": "Francisco and Jacinta Marto — Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Francisco_and_Jacinta_Marto",
+      "publisher": "Wikipedia",
+      "publisherNote": "Tertiary reference used for biographical dates and the birth-date discrepancy; not a primary source.",
+      "type": "encyclopedia"
+    }
+  ]
+}
