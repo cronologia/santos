@@ -107,10 +107,22 @@ const UI = {
     orgFounded: 'Founded',
     // Reference kinds are a CLOSED vocabulary, so they live here with the rest
     // of the chrome rather than in the translation caches.
+    //
+    // `type` is the KIND OF DOCUMENT, and nothing else. Two things that look
+    // like types are not, and putting them here was the single commonest error
+    // across the family (core#74):
+    //   PRIMACY -- `primary` was used 52 times. It is orthogonal: a vatican.va
+    //     decree is `official` AND primary, a diary is `archive` AND primary.
+    //     Say it in `publisherNote`, which is translated.
+    //   PERSPECTIVE -- `devotional`, `institutional`, `official-site`. The
+    //     source's stance is not its medium; `publisherNote` again.
+    // `testimony` and `analysis` ARE kinds and were missing; the sourcing rules
+    // name testimony explicitly as a class with its own corroboration bar.
     refTypes: {
       news: 'news', academic: 'academic', archive: 'archive', official: 'official',
       encyclopedia: 'encyclopedia', web: 'web', corpus: 'corpus', database: 'database',
       video: 'video', index: 'index', book: 'book', report: 'report', legal: 'legal',
+      testimony: 'testimony', analysis: 'analysis',
     },
     // English is the authoritative text, so it never carries a translation note.
     disclaimers: null,
@@ -162,6 +174,7 @@ const UI = {
       news: 'prensa', academic: 'académico', archive: 'archivo', official: 'oficial',
       encyclopedia: 'enciclopedia', web: 'web', corpus: 'corpus', database: 'base de datos',
       video: 'video', index: 'índice', book: 'libro', report: 'informe', legal: 'jurídico',
+      testimony: 'testimonio', analysis: 'análisis',
     },
     disclaimers: {
       machine: 'Traducción automática del inglés; la página en inglés es la versión de referencia.',
@@ -216,6 +229,7 @@ const UI = {
       news: 'imprensa', academic: 'acadêmico', archive: 'arquivo', official: 'oficial',
       encyclopedia: 'enciclopédia', web: 'web', corpus: 'corpus', database: 'base de dados',
       video: 'vídeo', index: 'índice', book: 'livro', report: 'relatório', legal: 'jurídico',
+      testimony: 'testemunho', analysis: 'análise',
     },
     disclaimers: {
       machine: 'Tradução automática do inglês; a página em inglês é a versão de referência.',
@@ -1601,6 +1615,9 @@ ${script}    </section>
 `;
 }
 
+/** Out-of-vocabulary `references[].type` values seen this build (core#74). */
+const UNKNOWN_REF_TYPES = new Set();
+
 function renderEventRow(ev, refNumById, ui) {
   const flag = ev.dateVerified === false
     ? ` <span class="flag" title="${esc((ui || UI.en).flagTitle)}">?</span>`
@@ -1666,6 +1683,13 @@ function renderReference(r, n, archives, ui) {
   // `type` is a CLOSED vocabulary, not prose: it belongs in the UI table with
   // the rest of the chrome, so a new type is a code change that surfaces as a
   // missing label rather than a silent English word on a Portuguese page.
+  // The vocabulary is closed, and an unknown type falls through to the raw
+  // English word on a localized page -- which is exactly what the comment above
+  // says must not happen. This REPORTS rather than throws (core#74); once the
+  // whole family is migrated it becomes the throw the comment always implied.
+  if (ui && ui.refTypes && r.type && !Object.prototype.hasOwnProperty.call(ui.refTypes, r.type)) {
+    UNKNOWN_REF_TYPES.add(r.type);
+  }
   const type = (ui && ui.refTypes && ui.refTypes[r.type]) || r.type;
   return `        <li id="ref-${n}">
           <a href="${esc(r.url)}" rel="noopener noreferrer" target="_blank">${esc(r.title)}</a>${archived}
@@ -1962,6 +1986,16 @@ function main() {
     `${data.events.length} events, ${data.figures.length} figures, ` +
     `${data.references.length} references, ${archivedRefs} with archive fallback.`
   );
+  // Named, not counted, and ALL of them: a report that says "3 problems" sends
+  // you looking, and one that says which three is actionable in the same run.
+  if (UNKNOWN_REF_TYPES.size) {
+    console.warn(
+      `WARNING: ${UNKNOWN_REF_TYPES.size} reference type(s) are outside the closed refTypes ` +
+      `vocabulary and render as raw English on every localized page: ` +
+      `${[...UNKNOWN_REF_TYPES].sort().map((t) => JSON.stringify(t)).join(", ")}. ` +
+      `Retype them, or move the characterisation into publisherNote, which IS translated (core#74).`
+    );
+  }
 }
 
 // Run the build only when invoked directly; when required (tests) just expose
@@ -1970,6 +2004,7 @@ if (require.main === module) main();
 
 module.exports = {
   esc, formatArchiveTs, renderCites, renderVizChips, decadeOf,
+  UNKNOWN_REF_TYPES, renderReference,
   GLOSSARY_BASE, GLOSSARY_MARKER, glossaryMarkerIds, renderGlossaryLinks, renderText,
   renderLineageNode, lineageHasIndirectEdges, renderLineageLegend, renderLineageSection,
   layoutBranchTimeline, renderBranchTimeline, BT_GEOM,
