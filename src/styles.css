@@ -386,6 +386,7 @@ figure.places-map figcaption { font-size: .78rem; color: var(--muted); margin-to
 @media print {
   #map .atlas-map { break-inside: avoid; page-break-inside: avoid; }
   .latam-c, .atlas-swatch { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
 
 /* ---------------------------------------------------------------------------
    Swimlanes — the thread-lane figure (core#23).
@@ -443,3 +444,12 @@ figure.swimlanes figcaption { font-size: .78rem; color: var(--muted); margin-top
   .sw-bases { display: block; }
   .sw-bases summary { display: none; }
 }
+
+/* `dateNote` — prose ABOUT the dating (which sources disagree, what a date
+ * still rests on), rendered beneath the event text rather than inside it. A
+ * block rather than inline, because it is frequently a sentence about a
+ * disagreement and must not read as part of the event. It renders at all only
+ * as of core#73; this repo's five bootstrap notes were written and shown to
+ * nobody until it was ported in. */
+.date-note { display: block; margin-top: .3rem; font-size: .82rem; line-height: 1.5; color: var(--muted); border-left: 2px solid var(--line); padding-left: .55rem; }
+@media print { .date-note { border-left-color: #999; } }

@@ -216,12 +216,17 @@ for (const lang of LANGS) {
 // A parenthetical that NAMES rather than characterises is bibliography and
 // stays: an imprint and year, the presenters, the parent publisher. List those
 // reference ids here so the check below stays a real signal.
-// `aas-25-1933`: "vatican.va (Acta Apostolicae Sedis)" NAMES the publication —
+// Every `aas-*` id: "vatican.va (Acta Apostolicae Sedis)" NAMES the publication —
 // the Holy See's official gazette — rather than characterising it. The gazette's
 // name is a Latin proper noun and is identical in all three locales; what this
-// project says ABOUT the volume ("a volume-level pointer … the specific acta
-// have not yet been located") lives in publisherNote, which IS translated.
-const PUBLISHER_BRACKET_OK = new Set(['aas-25-1933']);
+// project says ABOUT each volume (which decree sits on which page) lives in
+// publisherNote, which IS translated. Nine volumes now carry the decrees this
+// chronology rests on; they are listed per id rather than pattern-matched, so a
+// new publisher form still has to argue for itself.
+const PUBLISHER_BRACKET_OK = new Set([
+  'aas-05-1913', 'aas-15-1923', 'aas-17-1925', 'aas-23-1931', 'aas-25-1933',
+  'aas-38-1946', 'aas-39-1947', 'aas-82-1990', 'aas-94-2002',
+]);
 // <<< ADOPT
 
 test('references: publisherNote carries the prose, publisher the citation', () => {

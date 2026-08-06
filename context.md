@@ -12,10 +12,14 @@ This is not a chronology of apparitions. `cronologia` already has repos for
 those — `guadalupe`, `lourdes`, `fatima`, and the others in the same family.
 This repo is about the *causes*: the ecclesiastical process that runs from a
 person's death through Servant of God, Venerable, Blessed and Saint, and the
-dated documents that mark each step.
+dated documents that mark each step. As of the second pass it carries the whole
+spine — introduction of the cause, decree on heroic virtues, decrees on
+miracles, beatification, further miracle decrees, canonization — plus the
+institutional acts (1588, 1969, 1983) that explain why the older and newer
+paths do not look alike, and the one cause here that is still running.
 
 The seed set is the five canonized seers of the four apparitions with the
-largest cults:
+largest cults, plus the sixth seer whose cause is in progress:
 
 | Saint | Apparition | Beatified | Canonized |
 |---|---|---|---|
@@ -24,6 +28,7 @@ largest cults:
 | Bernadette Soubirous | Lourdes, 1858 | 1925, Pius XI | 1933, Pius XI |
 | Francisco Marto | Fátima, 1917 | 2000, John Paul II | 2017, Francis |
 | Jacinta Marto | Fátima, 1917 | 2000, John Paul II | 2017, Francis |
+| Lúcia dos Santos | Fátima, 1917 | — | — (Venerable, 2023) |
 
 Read the table backwards and the interesting shape appears: **the apparition
 and the canonization are separated by anything from 82 years (Bernadette) to
@@ -39,6 +44,11 @@ never the things judged.
   document, declared this person a saint.*
 - An apparition approval is recorded as: *this named bishop, on this date,
   declared these reported events worthy of belief.*
+- A miracle decree is recorded as: *this dicastery, on this date, declared that
+  a miracle is established as worked by God through this person's intercession.*
+  Never "N was cured". Where the decree names its subject the dataset names
+  them (Juan Diego 2001); where it names nobody the dataset names nobody, even
+  when press accounts do (the Marto decrees of 1999 and 2017).
 - Neither is recorded as a statement that the reported events occurred. The
   1531 event text says "according to the Guadalupan account received by the
   Church"; the 1830, 1858 and 1917 events say the seers *reported*
@@ -52,45 +62,87 @@ This is not scepticism and it is not piety. It is the same discipline the rest
 of the `cronologia` family applies to political and juridical claims, applied
 here.
 
-## Current state (2026-08-05, bootstrap)
+## Current state (2026-08-06, second pass)
 
-**Shipped.** 16 events (1531–2017), 6 figures, 3 organizations, 4
-disambiguation entries, 19 references. Three locales — `en` authoritative, `es`
-and `pt` complete at 98/98 translatable strings. Gate green: validator, build,
-144 tests.
+**Shipped.** 36 events (1588–2023), 6 figures, 3 organizations, 6
+disambiguation entries, 5 facts, 34 references. Three locales — `en`
+authoritative, `es` and `pt` complete at 169/169 translatable strings. Gate
+green: validator, build, 148 tests.
 
-**The reference base is unusually strong at the top and weak in the middle.**
-Seven references are documents published on vatican.va: the 2002 Juan Diego
-canonization homily, the 1990 beatification homily (Spanish only), the official
-canonization biography, the 2000 and 2017 Marto homilies, Pius XII's 1947
-address to the Labouré pilgrims, and *Acta Apostolicae Sedis* vol. 25 (1933).
-Seven more are shrine and custodian records — official but devotional, and
-labeled as such in each `publisherNote`. Four are Wikipedia, used only for
-biographical dates pending primary verification, and never load-bearing alone.
+**The reference base is now anchored on the gazette.** Nine volumes of *Acta
+Apostolicae Sedis* (1913, 1923, 1925, 1931, 1933, 1946, 1947, 1990, 2002) are
+cited **to the page**, and they carry the decrees themselves: the introductions
+of the Labouré and Soubirous causes signed by Pius X, the heroic-virtues
+decrees, four miracle decrees, both apostolic letters of beatification, and the
+acts of the 1947 canonization. Alongside them: the Dicastery for the Causes of
+Saints' own pages and decree registers for the Martos and Lúcia, two Holy See
+press bulletins, the Carmel of Coimbra's postulation record, *Divinus
+perfectionis Magister*, and the shrine and custodian records the bootstrap
+already had.
 
-**Five of sixteen dates are flagged** (`dateVerified: false`), and the reason
-is almost always the same one: **vatican.va's published corpus has a hard edge
-at roughly Pius XII.** Pius XI, who performed three of the six papal acts here,
-is essentially absent from it. The flagged dates:
+**Two of thirty-six dates are flagged** (`dateVerified: false`), down from five
+of sixteen:
 
 | Date | Event | Why flagged |
 |---|---|---|
 | 1531-12-09 | Guadalupe apparitions | traditional dates; the underlying documentary question is contested and this repo does not propose to close it |
-| 1876-12-31 | Death of Catherine Labouré | secondary sources only |
-| 1879-04-16 | Death of Bernadette Soubirous | secondary sources only |
-| 1933-05-28 | Labouré beatified | no primary located; AAS vol. 25 cited **at volume level only** |
-| 1947-07-27 | Labouré canonized | Pius XII's 28 July address confirms the canonization happened but does not date the rite |
+| 1923-11-18 | Soubirous declared Venerable | *AAS* vol. 15 dates the same decree three incompatible ways — see below |
 
-The 1947 case is the one to read if you want to understand the standard: a
-vatican.va URL was available and was **not** treated as verifying the date,
-because the document is one day later and does not state it.
+### What the bootstrap got wrong, and it is worth knowing
 
-**Something the flags do not capture:** the 1830 and 1858 apparition dates are
-marked `dateVerified: true` on the strength of the *custodian's* account — the
-shrine describing its own site. That is a defensible standard, but it is a
-weaker class of evidence than the papal homilies, and the boolean flag cannot
-express the difference. Worth knowing before reading the flags as a quality
-score.
+The bootstrap concluded that **"vatican.va's published corpus has a hard edge at
+roughly Pius XII"**, and flagged three of six papal acts on that basis. The
+observation behind it was correct — the *homilies and speeches* trees hold
+nothing for Pius XI — and the generalization drawn from it was not. **The *Acta
+Apostolicae Sedis* archive on the same host reaches back to 1909**, as scanned
+PDFs with an OCR text layer, and prints the acts in full. Every flag that rested
+on the supposed edge is now cleared, several of them by documents that were four
+clicks from a URL the dataset already cited.
+
+The general lesson, which belongs to the family and not just this repo: **an
+absence found in one tree of a site is a claim about that tree, not about the
+site.** The sourcing rules already say a zero needs a positive control; this is
+the same rule applied to a corpus boundary rather than to a search term.
+
+Method, so it is repeatable:
+`https://www.vatican.va/archive/aas/documents/AAS-<vol>-<year>-ocr.pdf`,
+`pdftotext`, search the surname, then `pdftotext -layout -f <page>` to read the
+subscription. The OCR is reliable for Latin body text and **unreliable for
+proper names and page numbers** — page numbers were confirmed against running
+heads and the volume index, and personal names in the older miracle decrees are
+described rather than transcribed for exactly that reason.
+
+### The one flag that is a genuine primary-source disagreement
+
+*AAS* vol. 15 (1923) prints the Soubirous heroic-virtues decree with a
+subscription reading `decimo nono calendas Decembres` — **13 November**. The
+same decree says the pope chose "this present day, the twenty-sixth Sunday after
+Pentecost", which in 1923 was **Sunday 18 November**; 13 November was a Tuesday.
+The volume's chronological index files it under **"nov. 31"**, which is not a
+date. The Roman-date arithmetic was checked against a control in the same
+volume family — the 1925 *de tuto* decree subscribes `quarto nonas iunias` and
+independently calls itself the third day after Pentecost, and both give 2 June —
+so the contradiction is in the printed text, not in the reading of it. The
+dataset carries 18 November flagged, with all three readings in the `dateNote`.
+
+**`dateNote` renders now.** It did not at bootstrap: the field was written,
+never translated, and never displayed (core#73). The renderer, the
+`TRANSLATABLE_KEYS` entry and the two guard tests were ported from
+`core/template` in this pass, and the repo's six notes — five from the
+bootstrap, one new — are visible on all three locales for the first time.
+
+**A stylesheet defect was fixed in the same change** (core#79): an unclosed
+`@media print {` block meant every rule after it — the chronology spine,
+swimlanes, the places-map cards, and `.date-note` itself — was nested inside a
+print query and never applied on screen. `test/stylesheet-integrity.test.js`,
+ported from `core/template`, now guards the brace balance.
+
+**Something the flags still do not capture:** the 1830 and 1858 apparition dates
+are marked `dateVerified: true` on the strength of the *custodian's* account —
+the shrine describing its own site. That is a defensible standard, but it is a
+weaker class of evidence than a page-cited decree in the gazette, and the
+boolean cannot express the difference. Worth knowing before reading the flags as
+a quality score.
 
 ## `saints/` — the folder-per-saint convention
 
@@ -104,10 +156,15 @@ change a byte of `docs/`. This was deliberate for the bootstrap: it satisfies
 the folder-per-saint instruction immediately without committing the repo to a
 site architecture before that architecture is decided.
 
-**Lúcia dos Santos has no folder**, and that omission is recorded rather than
-silent: she is Venerable (decree of 22 June 2023), not canonized. She is in the
-dataset as a figure and as a disambiguation entry precisely so that her absence
-from `saints/` reads as a judgment rather than an oversight.
+**Lúcia dos Santos now has a folder**, and the bootstrap's rule that
+"`saints/` means canonized" has been replaced. Her cause is in the chronology as
+four dated acts (death 2005, the derogation and opening of the diocesan inquiry
+2008, Venerable 2023), so it produced a research trail of the same kind and size
+as the other five, and the old rule would have left the one cause still running
+as the one cause whose trail had nowhere to live. The directory now holds a
+trail per *cause tracked*, not per *canonization completed*; her `notes.md`
+opens by stating that she is not a canonized saint, and `saints/README.md`
+records the change and its two limits.
 
 ## Open questions
 
@@ -120,31 +177,45 @@ from `saints/` reads as a judgment rather than an oversight.
    that precedent is worth either copying or explicitly rejecting. See the
    design ticket on this repo. **Until it is decided, do not add a dataset key
    or a renderer for it.**
-2. **The Labouré AAS lookups**, both of them. Highest-value verification work
-   in the repo: AAS vol. 25 (1933) for the beatification, AAS vol. 39 (1947)
-   for the canonization — the latter is not yet in `references[]` at all.
-3. **The causes are missing.** Diocesan processes, introductions of causes,
-   decrees on heroic virtues, decrees on miracles. The chronology currently
-   jumps from death to beatification for every saint. Adding miracle decrees
-   needs care: the dataset records that the Church *judged* a healing
-   miraculous, never that a miracle occurred.
+2. ~~The Labouré AAS lookups~~ — **closed.** Both acts are cited to the page,
+   and her death date with them.
+3. ~~The causes are missing~~ — **closed for the six seers.** Twenty acts were
+   added: three institutional (1588, 1969, 1983), two for Juan Diego, four each
+   for Labouré and Soubirous, four for the Martos and three for Lúcia. What is
+   still absent by choice: the intermediate congregations
+   (*antepraeparatoria* / *praeparatoria*), most *de tuto* decrees (recorded
+   inside the neighbouring event's text rather than as rows), and the subjects
+   of the cures that the decrees name only in a scan too poor to transcribe.
 4. **The "youngest non-martyr saints" claim** (the Martos) is stated in the
    site's own voice in `facts` and again in the 2017 event text, but neither
    cited source states it. It is universally reported and probably true; it is
    still the weakest sentence in the dataset and should be attributed or
    softened.
-5. **Jacinta Marto's birth date**, 5 vs 11 March 1910. Deliberately left open;
-   the Fátima parish baptismal register would settle it.
+5. **Jacinta Marto's birth date**, 5 vs 11 March 1910. Deliberately left open,
+   and now sharper: the Holy See's own 2017 decree register gives **11 March**,
+   so this is a disagreement between two official sources rather than between a
+   custodian and devotional literature. The Fátima parish baptismal register
+   would settle it.
 6. **No `data/archives.json`.** No reference has a Wayback fallback yet. Run
    `scripts/archive-refs.js`; the shrine sites are the ones most likely to
    reorganize their URLs.
 7. **Scope.** Should this repo hold *only* apparition seers, or all recently
    canonized saints? The current title and subtitle commit to apparition
-   seers. Broadening is a title change, not just more rows.
+   seers — the subtitle's date range widened to 1588–2023 in this pass, which
+   is a change of *depth*, not of roster. Broadening the roster is still a
+   title change, not just more rows.
 8. **`AGENTS.md` is still the core template**, adapted only in its subject
    line. It describes `data/i18n/*.json` as machine-generated and not to be
    hand-edited; in this repo they are hand-authored and *are* the artifact to
    edit. Reconcile when the repo's own conventions have settled.
+9. **The two remaining unnamed cure subjects.** The 1933 and 1946 Labouré
+   decrees and the 1925 Soubirous decree all name their subjects; the scanned
+   OCR does not render the names reliably, so the dataset describes rather than
+   transcribes. A clean printing would let them be named the way the 2001 Juan
+   Diego decree's subject is.
+10. **A `refType` question the repo did not need to answer.** All 34 references
+   fall inside the closed vocabulary, so the reporter ported in
+   `cronologia/santos#5` prints no warning here.
 
 ## Two defects found by *reading the rendered Spanish and Portuguese pages*
 

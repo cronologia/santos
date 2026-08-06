@@ -58,6 +58,12 @@ const TRANSLATABLE_KEYS = new Set([
   // Lane bases are prose and RENDER on the page (renderSwimlanes publishes each
   // lane's grounding), so they are translated like any other visible prose.
   'basis', 'intro',
+  // `dateNote` is prose ABOUT the dating — which sources disagree, what a date
+  // still rests on. It was carried in this dataset and rendered NOWHERE, so the
+  // caveats were written, and invisible to every reader. Ported from
+  // `core/template` (core#73). Translatable because it is prose, and it now
+  // renders.
+  'dateNote',
 ]);
 
 // Interface strings the compiler emits itself (everything not sourced from data).
@@ -1623,11 +1629,18 @@ function renderEventRow(ev, refNumById, ui) {
     ? ` <span class="flag" title="${esc((ui || UI.en).flagTitle)}">?</span>`
     : '';
   const text = ev.text ? ` <span class="muted">— ${renderText(ev.text)}</span>` : '';
+  // `dateNote` is the prose about the dating: which sources disagree, what a
+  // date still rests on. The `?` flag says a date is unverified; this says WHY,
+  // and who disagrees. It was carried in the data and rendered nowhere, so the
+  // weaker half of the caveat was the only half a reader ever saw (core#73).
+  const dateNote = ev.dateNote
+    ? `<span class="date-note">${renderText(ev.dateNote)}</span>`
+    : '';
   return `        <tr>
           <td class="year">${esc(ev.year)}</td>
           <td>${esc(ev.date || '')}${flag}</td>
           <td>${esc(ev.place || '')}</td>
-          <td><strong>${esc(ev.title)}</strong>${text}${renderCites(ev.sources, refNumById)}</td>
+          <td><strong>${esc(ev.title)}</strong>${text}${renderCites(ev.sources, refNumById)}${dateNote}</td>
         </tr>`;
 }
 
@@ -2003,7 +2016,7 @@ function main() {
 if (require.main === module) main();
 
 module.exports = {
-  esc, formatArchiveTs, renderCites, renderVizChips, decadeOf,
+  esc, formatArchiveTs, renderCites, renderVizChips, decadeOf, renderEventRow,
   UNKNOWN_REF_TYPES, renderReference,
   GLOSSARY_BASE, GLOSSARY_MARKER, glossaryMarkerIds, renderGlossaryLinks, renderText,
   renderLineageNode, lineageHasIndirectEdges, renderLineageLegend, renderLineageSection,
