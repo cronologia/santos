@@ -145,7 +145,45 @@ papal acts actually live.
   canonized. Sources that call her "Santa Lúcia" are either wrong or are
   talking about **Saint Lucy of Syracuse** (`Santa Luzia` in pt, `Santa
   Lucía` in es) — a fourth-century martyr with no connection to Fátima. This
-  collision is real and common.
+  collision is real and common. **The form the Holy See uses is neither of the
+  common ones**: the 2023 decree register and the press bulletin both say
+  `Lúcia de Jesus e do Coração Imaculado` (or `Lucia di Gesù e del Cuore
+  Immacolato` in the Italian), with `Lúcia dos Santos` given as the name "al
+  secolo". Searching a dicastery register for `dos Santos` alone can miss her;
+  searching for `Coração Imaculado` finds her and little else. Her own
+  postulation publishes at `lucia.pt`, in Portuguese only — the `/en/` tree
+  404s.
+
+---
+
+## The cause vocabulary — terms that find the acts
+
+Added in the second pass, because the acts are not searchable by the saints'
+names alone. In the Latin of *Acta Apostolicae Sedis*, a cause is a series of
+`SUPER DUBIO` questions and the searchable strings are the formulas, not the
+narrative:
+
+- `Decretum super virtutibus` / `in gradu heroico` — the heroic-virtues decree
+  (Venerable). Under it the person is styled `Venerabilis Serva Dei`.
+- `Decretum super miraculis` / `An et de quibus miraculis constet` — a miracle
+  decree. The dispositive sentence begins `Constare de …`.
+- `Decretum super dubio de tuto` / `Tuto procedi posse` — the decree that it is
+  safe to proceed. Frequently the only one indexed under a memorable page.
+- `Commissio introductionis Causae` — the introduction of the cause.
+- `cultu ab immemorabili tempore praestito` — the equipollent route. This is
+  the string that finds Juan Diego's 1990 act, and searching his cause for
+  `virtutibus` returns nothing, because no such decree exists.
+- Diocese-of-origin headings, which is how AAS files a cause and **not** by the
+  person's name: `PARISIEN.` (Labouré), `NIVERNEN. SEU TARBIEN. ET LOURDEN.`
+  (Soubirous), `MEXICANA` (Juan Diego).
+
+Two OCR traps in the scanned volumes, both encountered:
+
+- **Page numbers are unreliable.** `381` was read as `581` in AAS 23 (1931), in
+  a volume with only 566 pages. Confirm page numbers against running heads.
+- **Roman date formulas are not self-checking.** `decimo nono calendas
+  Decembres` and `decimo quarto calendas Decembres` differ by five days and by
+  one word. Where a decree also names a liturgical day, use it as the control.
 
 ---
 

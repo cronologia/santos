@@ -43,23 +43,56 @@ exactly as they apply to the dataset:
 
 ## Who has a folder, and who does not
 
-Five folders, for the five canonized seers of the four apparitions this repo
-was seeded from:
+Six folders, for the five canonized seers this repo was seeded from and for the
+one seer whose cause this dataset now tracks:
 
-| Folder | Apparition | Canonized |
+| Folder | Apparition | Status |
 |---|---|---|
-| `juan-diego-cuauhtlatoatzin/` | Guadalupe, 1531 | 31 July 2002 |
-| `catherine-laboure/` | Rue du Bac (Miraculous Medal), 1830 | 27 July 1947 |
-| `bernadette-soubirous/` | Lourdes, 1858 | 8 December 1933 |
-| `francisco-marto/` | Fátima, 1917 | 13 May 2017 |
-| `jacinta-marto/` | Fátima, 1917 | 13 May 2017 |
+| `juan-diego-cuauhtlatoatzin/` | Guadalupe, 1531 | canonized 31 July 2002 |
+| `catherine-laboure/` | Rue du Bac (Miraculous Medal), 1830 | canonized 27 July 1947 |
+| `bernadette-soubirous/` | Lourdes, 1858 | canonized 8 December 1933 |
+| `francisco-marto/` | Fátima, 1917 | canonized 13 May 2017 |
+| `jacinta-marto/` | Fátima, 1917 | canonized 13 May 2017 |
+| `lucia-dos-santos/` | Fátima, 1917 | **Venerable, 22 June 2023 — not beatified, not canonized** |
 
-**Lúcia dos Santos has no folder, and that omission is deliberate.** The third
-Fátima seer is *Venerable* — Pope Francis authorized the decree on her heroic
-virtues on 22 June 2023 — but she has been neither beatified nor canonized.
-`saints/` means canonized. She is in the dataset (as a figure and as a
-disambiguation entry) precisely so that her absence from this directory is not
-read as an oversight. If her cause advances, she gets a folder then.
+### The rule changed, and here is why
+
+The bootstrap's rule was **`saints/` means canonized**, and Lúcia dos Santos'
+absence was recorded as a judgment rather than left silent: "She is in the
+dataset (as a figure and as a disambiguation entry) precisely so that her
+absence from this directory is not read as an oversight. If her cause advances,
+she gets a folder then."
+
+Her cause has not advanced past Venerable. The folder is here anyway, because
+the pass that added the causes to the chronology showed the old rule was
+answering the wrong question.
+
+What this directory holds is a **research trail** — sources consulted and
+rejected, why a date is flagged, what to try next. That trail is produced by
+*working a cause*, not by a cause finishing. Lúcia's is now the same size and
+the same kind as the other five: the Carmel of Coimbra's postulation record, a
+403 from Vatican News, a 404 on the site's English tree, a negative *AAS*
+search, the derogation quoted but not primary-cited. Keeping the old rule would
+have meant that the one cause still running is the one cause whose trail has
+nowhere to live — which reproduces, at the notes level, exactly the
+understatement that adding her acts to the chronology was meant to fix.
+
+So the rule is now: **`saints/<slug>/` is a research trail for a cause this
+dataset tracks.** A folder is not a claim of sanctity, and the README's older
+principle already said as much — *a slug is not a claim; the folder name is a
+filename.* The status column above carries the claim, the folder does not, and
+`lucia-dos-santos/notes.md` opens by saying in its first line that she is not a
+canonized saint.
+
+Two consequences worth stating so they are not rediscovered:
+
+- **This does not widen scope.** The roster is still the seers of the four
+  seeded apparitions. A folder is added when this repo works someone's cause,
+  not when someone is proposed for one.
+- **If her cause is ever closed without beatification**, the folder stays and
+  the status column says so. A trail of work done does not stop existing
+  because the work led nowhere; that is the whole point of recording the
+  sources that did not yield.
 
 ## Relationship to the site
 
