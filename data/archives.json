@@ -1,0 +1,210 @@
+{
+  "generatedBy": "scripts/archive-refs.js",
+  "updatedAt": "2026-08-10",
+  "snapshots": {
+    "https://en.wikipedia.org/wiki/Bernadette_Soubirous": {
+      "refId": "wp-bernadette",
+      "archiveUrl": "https://web.archive.org/web/20260716050430/https://en.wikipedia.org/wiki/Bernadette_Soubirous",
+      "timestamp": "20260716050430",
+      "checkedAt": "2026-08-10"
+    },
+    "https://en.wikipedia.org/wiki/Catherine_Labour%C3%A9": {
+      "refId": "wp-laboure",
+      "archiveUrl": "https://web.archive.org/web/20260628192721/https://en.wikipedia.org/wiki/Catherine_Labour%C3%A9",
+      "timestamp": "20260628192721",
+      "checkedAt": "2026-08-10"
+    },
+    "https://en.wikipedia.org/wiki/Francisco_and_Jacinta_Marto": {
+      "refId": "wp-marto",
+      "archiveUrl": "https://web.archive.org/web/20260624042644/https://en.wikipedia.org/wiki/Francisco_and_Jacinta_Marto",
+      "timestamp": "20260624042644",
+      "checkedAt": "2026-08-10"
+    },
+    "https://en.wikipedia.org/wiki/Juan_Diego": {
+      "refId": "wp-juan-diego",
+      "archiveUrl": "https://web.archive.org/web/20260730204617/https://en.wikipedia.org/wiki/Juan_Diego",
+      "timestamp": "20260730204617",
+      "checkedAt": "2026-08-10"
+    },
+    "https://lucia.pt/historia-da-causa/": {
+      "refId": "lucia-causa",
+      "archiveUrl": "https://web.archive.org/web/20260510081246/https://lucia.pt/historia-da-causa/",
+      "timestamp": "20260510081246",
+      "checkedAt": "2026-08-10"
+    },
+    "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2017/03/23/0177/00415.html": {
+      "refId": "press-marto-2017",
+      "archiveUrl": "https://web.archive.org/web/20260113042127/https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2017/03/23/0177/00415.html",
+      "timestamp": "20260113042127",
+      "checkedAt": "2026-08-10"
+    },
+    "https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2023/06/22/0465/01035.html": {
+      "refId": "press-lucia-2023",
+      "archiveUrl": "https://web.archive.org/web/20251012195337/https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2023/06/22/0465/01035.html",
+      "timestamp": "20251012195337",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.causesanti.va/it/archivio-del-dicastero-cause-santi/promulgazione-decreti/decreti-pubblicati-nel-2017.html": {
+      "refId": "ccs-decrees-2017",
+      "archiveUrl": "https://web.archive.org/web/20260521051449/https://www.causesanti.va/it/archivio-del-dicastero-cause-santi/promulgazione-decreti/decreti-pubblicati-nel-2017.html",
+      "timestamp": "20260521051449",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.causesanti.va/it/archivio-del-dicastero-cause-santi/promulgazione-decreti/decreti-pubblicati-nel-2023.html": {
+      "refId": "ccs-decrees-2023",
+      "archiveUrl": "https://web.archive.org/web/20260520231919/https://www.causesanti.va/it/archivio-del-dicastero-cause-santi/promulgazione-decreti/decreti-pubblicati-nel-2023.html",
+      "timestamp": "20260520231919",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.causesanti.va/it/santi-e-beati/francisco-e-jacinta-marto.html": {
+      "refId": "ccs-marto",
+      "archiveUrl": "https://web.archive.org/web/20260311105813/https://www.causesanti.va/it/santi-e-beati/francisco-e-jacinta-marto.html",
+      "timestamp": "20260311105813",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.fatima.pt/en/news/saint-francisco-marto-was-born-110-years-ago": {
+      "refId": "fatima-francisco-birth",
+      "archiveUrl": "https://web.archive.org/web/20260116102914/https://www.fatima.pt/en/news/saint-francisco-marto-was-born-110-years-ago",
+      "timestamp": "20260116102914",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.fatima.pt/en/news/today-marks-the-anniversary-of-saint-jacinta-martos-birth": {
+      "refId": "fatima-jacinta-birth",
+      "archiveUrl": "https://web.archive.org/web/20260212130537/https://www.fatima.pt/en/news/today-marks-the-anniversary-of-saint-jacinta-martos-birth",
+      "timestamp": "20260212130537",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.fatima.pt/en/pages/narrative-of-the-apparitions-": {
+      "refId": "fatima-apparitions",
+      "archiveUrl": "https://web.archive.org/web/20260529205719/https://www.fatima.pt/en/pages/narrative-of-the-apparitions-",
+      "timestamp": "20260529205719",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.lourdes-france.com/en/centenary-of-the-beatification-of-bernadette-soubirous/": {
+      "refId": "lourdes-beatification-centenary",
+      "archiveUrl": "https://web.archive.org/web/20260412170908/https://www.lourdes-france.com/en/centenary-of-the-beatification-of-bernadette-soubirous/",
+      "timestamp": "20260412170908",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.lourdes-france.com/en/the-apparitions/": {
+      "refId": "lourdes-apparitions",
+      "archiveUrl": "https://web.archive.org/web/20260519222921/https://www.lourdes-france.com/en/the-apparitions/",
+      "timestamp": "20260519222921",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.medaille-miraculeuse.fr/chapelle-medaille-miraculeuse": {
+      "refId": "medaille-chapelle",
+      "archiveUrl": "https://web.archive.org/web/20260315172304/https://www.medaille-miraculeuse.fr/chapelle-medaille-miraculeuse",
+      "timestamp": "20260315172304",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-05-1913-ocr.pdf": {
+      "refId": "aas-05-1913",
+      "archiveUrl": "https://web.archive.org/web/20260412070101/https://www.vatican.va/archive/aas/documents/AAS-05-1913-ocr.pdf",
+      "timestamp": "20260412070101",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-15-1923-ocr.pdf": {
+      "refId": "aas-15-1923",
+      "archiveUrl": "https://web.archive.org/web/20260430055714/https://www.vatican.va/archive/aas/documents/AAS-15-1923-ocr.pdf",
+      "timestamp": "20260430055714",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-17-1925-ocr.pdf": {
+      "refId": "aas-17-1925",
+      "archiveUrl": "https://web.archive.org/web/20260728034435/https://www.vatican.va/archive/aas/documents/AAS-17-1925-ocr.pdf",
+      "timestamp": "20260728034435",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-23-1931-ocr.pdf": {
+      "refId": "aas-23-1931",
+      "archiveUrl": "https://web.archive.org/web/20260727181128/https://www.vatican.va/archive/aas/documents/AAS-23-1931-ocr.pdf",
+      "timestamp": "20260727181128",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-25-1933-ocr.pdf": {
+      "refId": "aas-25-1933",
+      "archiveUrl": "https://web.archive.org/web/20260528021011/https://www.vatican.va/archive/aas/documents/AAS-25-1933-ocr.pdf",
+      "timestamp": "20260528021011",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-38-1946-ocr.pdf": {
+      "refId": "aas-38-1946",
+      "archiveUrl": "https://web.archive.org/web/20260524035602/https://www.vatican.va/archive/aas/documents/AAS-38-1946-ocr.pdf",
+      "timestamp": "20260524035602",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-39-1947-ocr.pdf": {
+      "refId": "aas-39-1947",
+      "archiveUrl": "https://web.archive.org/web/20260730124016/https://www.vatican.va/archive/aas/documents/AAS-39-1947-ocr.pdf",
+      "timestamp": "20260730124016",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-82-1990-ocr.pdf": {
+      "refId": "aas-82-1990",
+      "archiveUrl": "https://web.archive.org/web/20260518201851/https://www.vatican.va/archive/aas/documents/AAS-82-1990-ocr.pdf",
+      "timestamp": "20260518201851",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/archive/aas/documents/AAS-94-2002-ocr.pdf": {
+      "refId": "aas-94-2002",
+      "archiveUrl": "https://web.archive.org/web/20260528153410/https://www.vatican.va/archive/aas/documents/AAS-94-2002-ocr.pdf",
+      "timestamp": "20260528153410",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/francesco/en/homilies/2017/documents/papa-francesco_20170513_omelia-pellegrinaggio-fatima.html": {
+      "refId": "vat-marto-canonization-2017",
+      "archiveUrl": "https://web.archive.org/web/20260204114311/https://www.vatican.va/content/francesco/en/homilies/2017/documents/papa-francesco_20170513_omelia-pellegrinaggio-fatima.html",
+      "timestamp": "20260204114311",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/john-paul-ii/en/apost_constitutions/documents/hf_jp-ii_apc_25011983_divinus-perfectionis-magister.html": {
+      "refId": "vat-dpm-1983",
+      "archiveUrl": "https://web.archive.org/web/20260628210514/https://www.vatican.va/content/john-paul-ii/en/apost_constitutions/documents/hf_jp-ii_apc_25011983_divinus-perfectionis-magister.html",
+      "timestamp": "20260628210514",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/john-paul-ii/en/homilies/2000/documents/hf_jp-ii_hom_20000513_beatification-fatima.html": {
+      "refId": "vat-marto-beatification-2000",
+      "archiveUrl": "https://web.archive.org/web/20260517001104/https://www.vatican.va/content/john-paul-ii/en/homilies/2000/documents/hf_jp-ii_hom_20000513_beatification-fatima.html",
+      "timestamp": "20260517001104",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/john-paul-ii/en/homilies/2002/documents/hf_jp-ii_hom_20020731_canonization-mexico.html": {
+      "refId": "vat-jd-canonization-2002",
+      "archiveUrl": "https://web.archive.org/web/20260514044739/https://www.vatican.va/content/john-paul-ii/en/homilies/2002/documents/hf_jp-ii_hom_20020731_canonization-mexico.html",
+      "timestamp": "20260514044739",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/john-paul-ii/es/homilies/1990/documents/hf_jp-ii_hom_19900506_citta-del-messico.html": {
+      "refId": "vat-jd-beatification-1990",
+      "archiveUrl": "https://web.archive.org/web/20260316150136/https://www.vatican.va/content/john-paul-ii/es/homilies/1990/documents/hf_jp-ii_hom_19900506_citta-del-messico.html",
+      "timestamp": "20260316150136",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/content/pius-xii/fr/speeches/1947/documents/hf_p-xii_spe_19470728_beata-caterina-laboure.html": {
+      "refId": "vat-laboure-1947",
+      "archiveUrl": "https://web.archive.org/web/20260518011905/https://www.vatican.va/content/pius-xii/fr/speeches/1947/documents/hf_p-xii_spe_19470728_beata-caterina-laboure.html",
+      "timestamp": "20260518011905",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_en.html": {
+      "refId": "vat-jd-bio",
+      "archiveUrl": "https://web.archive.org/web/20260221231342/https://www.vatican.va/news_services/liturgy/saints/ns_lit_doc_20020731_juan-diego_en.html",
+      "timestamp": "20260221231342",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vaticannews.va/en/vatican-city/news/2023-06/fatima-visionary-sr-lucia-declared-venerable.html": {
+      "refId": "vaticannews-lucia-venerable",
+      "archiveUrl": "https://web.archive.org/web/20260716145921/https://www.vaticannews.va/en/vatican-city/news/2023-06/fatima-visionary-sr-lucia-declared-venerable.html",
+      "timestamp": "20260716145921",
+      "checkedAt": "2026-08-10"
+    },
+    "https://www.vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/3675-20-february-saint-jacinta-marto.html": {
+      "refId": "vaticanstate-jacinta",
+      "archiveUrl": "https://web.archive.org/web/20260421174205/https://vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/3675-20-february-saint-jacinta-marto.html",
+      "timestamp": "20260421174205",
+      "checkedAt": "2026-08-10"
+    }
+  }
+}
