@@ -4,6 +4,7 @@
     "subtitle": "Canonization paths of Marian-apparition seer saints (1588–2023)",
     "description": "An open, source-referenced chronology of the causes of the Catholic saints tied to the major Marian apparitions of Guadalupe, the Rue du Bac, Lourdes and Fátima — the dated acts from the introduction of a cause through the decrees on virtues and miracles to beatification and canonization, with the institutional reforms that shaped them.",
     "language": "en",
+    "layout": "river",
     "siteUrl": "https://cronologia.github.io/santos/",
     "lastUpdated": "2026-08-05",
     "dataQualityNote": "Work-in-progress dataset compiled from public sources (see references). Sanctity and miracles are recorded here as Church judgments: the dataset records who declared what and when, citing the declaring document, and does not assert supernatural claims as fact. A decree recognising a miracle is recorded as the recognition act, never as a statement that a person was cured, and where a decree names no beneficiary none is supplied from press accounts. A canonization is never recorded as authenticating an apparition. Contested claims are attributed to their authors; dates not yet verified against a primary source are flagged with a ? mark, and the note beneath such an event says why. Corrections against primary sources are welcome."
