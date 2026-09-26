@@ -1,12 +1,15 @@
 {
   "_meta": {
     "targetLang": "pt",
-    "coverage": "169/169",
+    "coverage": "172/172",
     "generatedBy": "hand-authored by Claude (bootstrap commit) — NOT produced by scripts/translate.js",
     "note": "Traduções portuguesas escritas à mão para todas as strings traduzíveis de data/chronology.json (incluindo references[].publisherNote, que scripts/translate.js não conta no seu total de 79 strings). O inglês é a versão autoritativa; manter este cache em dia quando a prosa inglesa mudar. Sincronizada em 2026-08-05: 5 cadeias (2 papeis de figuras, 3 relacoes de organizacoes) foram reindexadas e ampliadas quando a prosa inglesa absorveu texto que antes vivia em campos nao traduziveis (figures[].dates, organizations[].founded). Sincronizada em 2026-08-06: 81 cadeias novas (os atos das causas: introducao, virtudes heroicas, decretos sobre milagres, a causa de Lucia dos Santos e as reformas institucionais de 1588, 1969 e 1983), 10 chaves reindexadas depois de a prosa inglesa ser reescrita, e pela primeira vez os dateNote, que agora sao traduzidos e exibidos (core#73).",
     "humanReviewed": false
   },
   "strings": {
+    "1815": "1815",
+    "1858": "1858",
+    "1919": "1919",
     "140 rue du Bac, Paris, France": "140 rue du Bac, Paris, França",
     "A canonization is the Church's judgment on a person's holiness; approval of an apparition ('worthy of belief', declared by the local bishop) is a separate ecclesiastical judgment. Neither is recorded here as a statement that the reported events occurred; both are recorded as dated declarations by named authorities.": "Uma canonização é o juízo da Igreja sobre a santidade de uma pessoa; a aprovação de uma aparição («digna de fé», declarada pelo bispo local) é um juízo eclesiástico distinto. Nenhum dos dois é registrado aqui como afirmação de que os fatos relatados ocorreram; ambos são registrados como declarações datadas de autoridades nomeadas.",
     "A chronology of how five seers of major Marian apparitions were declared blessed and saint — who declared what, when, and on the strength of which document.": "Uma cronologia de como cinco videntes de grandes aparições marianas foram declarados beatos e santos: quem declarou o quê, quando e com base em qual documento.",

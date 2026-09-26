@@ -1,12 +1,15 @@
 {
   "_meta": {
     "targetLang": "es",
-    "coverage": "169/169",
+    "coverage": "172/172",
     "generatedBy": "hand-authored by Claude (bootstrap commit) — NOT produced by scripts/translate.js",
     "note": "Hand-written Spanish translations of every translatable string in data/chronology.json (including references[].publisherNote, which scripts/translate.js does not count in its 79-string total). English is authoritative; keep this cache in sync when the English prose changes. Sincronizada 2026-08-05: 5 cadenas (2 roles de figuras, 3 relaciones de organizaciones) se volvieron a indexar y ampliar cuando la prosa inglesa absorbio texto que antes vivia en campos no traducibles (figures[].dates, organizations[].founded). Sincronizada 2026-08-06: 81 cadenas nuevas (los actos de las causas: introduccion, virtudes heroicas, decretos sobre milagros, la causa de Lucia dos Santos y las reformas institucionales de 1588, 1969 y 1983), 10 claves reindexadas tras reescribirse la prosa inglesa, y por primera vez los dateNote, que ahora se traducen y se muestran (core#73).",
     "humanReviewed": false
   },
   "strings": {
+    "1815": "1815",
+    "1858": "1858",
+    "1919": "1919",
     "140 rue du Bac, Paris, France": "140 rue du Bac, París, Francia",
     "A canonization is the Church's judgment on a person's holiness; approval of an apparition ('worthy of belief', declared by the local bishop) is a separate ecclesiastical judgment. Neither is recorded here as a statement that the reported events occurred; both are recorded as dated declarations by named authorities.": "Una canonización es el juicio de la Iglesia sobre la santidad de una persona; la aprobación de una aparición («digna de fe», declarada por el obispo local) es un juicio eclesiástico distinto. Ninguno se registra aquí como afirmación de que los hechos relatados ocurrieron; ambos se registran como declaraciones fechadas de autoridades con nombre.",
     "A chronology of how five seers of major Marian apparitions were declared blessed and saint — who declared what, when, and on the strength of which document.": "Una cronología de cómo cinco videntes de grandes apariciones marianas fueron declarados beatos y santos: quién declaró qué, cuándo y con qué documento.",
